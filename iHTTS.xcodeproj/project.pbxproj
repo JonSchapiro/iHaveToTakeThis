@@ -20,6 +20,7 @@
 		310FFF931CC19B0B0075AA9E /* iHTTS WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 310FFF7D1CC19B0A0075AA9E /* iHTTS WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		310FFF9E1CC1A9340075AA9E /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310FFF9D1CC1A9340075AA9E /* Call.swift */; };
 		316CD2511CC46067004C06EF /* CallErrorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CD2501CC46067004C06EF /* CallErrorInterfaceController.swift */; };
+		316CD2531CC46515004C06EF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CD2521CC46515004C06EF /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		310FFF9B1CC19B120075AA9E /* iHTTS WatchKit 1 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iHTTS WatchKit 1 Extension.entitlements"; sourceTree = "<group>"; };
 		310FFF9D1CC1A9340075AA9E /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
 		316CD2501CC46067004C06EF /* CallErrorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallErrorInterfaceController.swift; sourceTree = "<group>"; };
+		316CD2521CC46515004C06EF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				310FFF6D1CC19AAE0075AA9E /* Assets.xcassets */,
 				310FFF6F1CC19AAE0075AA9E /* LaunchScreen.storyboard */,
 				310FFF721CC19AAE0075AA9E /* Info.plist */,
+				316CD2521CC46515004C06EF /* Utils.swift */,
 			);
 			path = iHTTS;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				310FFF691CC19AAE0075AA9E /* ViewController.swift in Sources */,
 				310FFF671CC19AAE0075AA9E /* AppDelegate.swift in Sources */,
+				316CD2531CC46515004C06EF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

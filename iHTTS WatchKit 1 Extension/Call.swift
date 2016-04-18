@@ -10,11 +10,13 @@ import Foundation
 
 class Call {
     var callerName:String?
+    var myNumber:String?
     var callDelay:String?
     var callRepeat:String?
     
-    init(callerName:String?,callDelay:String?,callRepeat:String?){
+    init(callerName:String?,myNumber:String?,callDelay:String?,callRepeat:String?){
         self.callerName = callerName
+        self.myNumber = myNumber
         self.callDelay = callDelay
         self.callRepeat = callRepeat
     }
@@ -23,6 +25,7 @@ class Call {
         //make http request to node server with params
         print("requesting phone call from server... with params:")
         print("callerName:",self.callerName)
+        print("myNumber:",self.myNumber)
         print("callDelay:",self.callDelay)
         print("callRepeat",self.callRepeat)
         
@@ -30,7 +33,7 @@ class Call {
         
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
         request.HTTPMethod = "POST"
-        let postString = "callDelay=" + self.callDelay! + "&callRepeat=" + self.callRepeat!
+        let postString = "callDelay=" + self.callDelay! + "&callRepeat=" + self.callRepeat! + "&myNumber=" + self.myNumber!
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
             guard error == nil && data != nil else {                                                          // check for fundamental networking error
@@ -49,4 +52,6 @@ class Call {
         task.resume()
         
     }
+    
+    
 }
