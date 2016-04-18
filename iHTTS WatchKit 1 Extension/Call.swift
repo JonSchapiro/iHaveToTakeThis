@@ -29,9 +29,9 @@ class Call {
         let url = "http://localhost:3000/api/call/" + self.callerName!
         
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
-        request.HTTPMethod = "GET"
+        request.HTTPMethod = "POST"
         let postString = "callDelay=" + self.callDelay! + "&callRepeat=" + self.callRepeat!
-        //request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
             guard error == nil && data != nil else {                                                          // check for fundamental networking error
                 print("error=\(error)")

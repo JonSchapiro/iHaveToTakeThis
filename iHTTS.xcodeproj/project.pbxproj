@@ -19,6 +19,7 @@
 		310FFF8F1CC19B0B0075AA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310FFF8E1CC19B0B0075AA9E /* Assets.xcassets */; };
 		310FFF931CC19B0B0075AA9E /* iHTTS WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 310FFF7D1CC19B0A0075AA9E /* iHTTS WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		310FFF9E1CC1A9340075AA9E /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310FFF9D1CC1A9340075AA9E /* Call.swift */; };
+		316CD2511CC46067004C06EF /* CallErrorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316CD2501CC46067004C06EF /* CallErrorInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		310FFF901CC19B0B0075AA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310FFF9B1CC19B120075AA9E /* iHTTS WatchKit 1 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iHTTS WatchKit 1 Extension.entitlements"; sourceTree = "<group>"; };
 		310FFF9D1CC1A9340075AA9E /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		316CD2501CC46067004C06EF /* CallErrorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallErrorInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				310FFF9C1CC1A9210075AA9E /* Models */,
 				310FFF9B1CC19B120075AA9E /* iHTTS WatchKit 1 Extension.entitlements */,
 				310FFF7F1CC19B0A0075AA9E /* InterfaceController.swift */,
+				316CD2501CC46067004C06EF /* CallErrorInterfaceController.swift */,
 				310FFF811CC19B0A0075AA9E /* Assets.xcassets */,
 				310FFF831CC19B0A0075AA9E /* Info.plist */,
 			);
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316CD2511CC46067004C06EF /* CallErrorInterfaceController.swift in Sources */,
 				310FFF801CC19B0A0075AA9E /* InterfaceController.swift in Sources */,
 				310FFF9E1CC1A9340075AA9E /* Call.swift in Sources */,
 			);
@@ -550,6 +554,7 @@
 				310FFF771CC19AAE0075AA9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310FFF941CC19B0B0075AA9E /* Build configuration list for PBXNativeTarget "iHTTS WatchKit 1 App" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +563,7 @@
 				310FFF961CC19B0B0075AA9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		310FFF971CC19B0B0075AA9E /* Build configuration list for PBXNativeTarget "iHTTS WatchKit 1 Extension" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +572,7 @@
 				310FFF991CC19B0B0075AA9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
